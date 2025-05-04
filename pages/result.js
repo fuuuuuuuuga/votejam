@@ -1,6 +1,7 @@
 import { supabase } from '../lib/supabase';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -252,12 +253,12 @@ export default function ResultPage() {
               </button>
 
               <div className="mt-8 text-center">
-                <a
+                <Link
                   href="/"
                   className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-150 underline underline-offset-2"
                 >
                   またのご利用をお待ちしています
-                </a>
+                </Link>
               </div>
 
               {showModal && (
@@ -309,12 +310,12 @@ export default function ResultPage() {
               </button>
 
               <div className="mt-8 text-center">
-                <a
+                <Link
                   href="/"
                   className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 transition-colors duration-150 underline underline-offset-2"
                 >
                   ホストとして利用したい場合はこちらから
-                </a>
+                </Link>
               </div>
             </>
           )}
