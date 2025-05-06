@@ -338,7 +338,7 @@ export default function VoterPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-10 bg-gray-50 text-center animate-fade-in">
       {showError && errorMessage && (
-        <div className="fixed bottom-4 md:bottom-4 sm:top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-2 rounded-lg shadow-lg z-50 animate-fade-in whitespace-nowrap text-sm">
+        <div className="fixed top-4 md:bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-2 rounded-lg shadow-lg z-[100] animate-fade-in whitespace-nowrap text-sm">
           {errorMessage}
         </div>
       )}
