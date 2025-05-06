@@ -15,7 +15,8 @@ export default function VotePage() {
   const router = useRouter();
   const { count, session } = router.query;
 
-  const voteUrl = `http://localhost:3000/voter?count=${count}&session=${session}`;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://votejam.vercel.app';
+  const voteUrl = `${baseUrl}/voter?count=${count}&session=${session}`;
   const [elapsed, setElapsed] = useState(0);
   const [isExpired, setIsExpired] = useState(false);
   const [sessionChecked, setSessionChecked] = useState(false);
