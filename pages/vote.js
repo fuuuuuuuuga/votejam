@@ -201,7 +201,7 @@ export default function VotePage() {
         </div>
       )}
       {successMessage && (
-        <div className="fixed top-4 md:bottom-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-2 rounded-lg shadow-lg z-[100] animate-fade-in whitespace-nowrap text-sm max-w-[90%] h-fit">
+        <div className="fixed left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-2 rounded-lg shadow-lg z-[100] animate-fade-in whitespace-nowrap text-sm max-w-[90%] h-fit sm:top-4 md:top-auto md:bottom-4">
           {successMessage}
         </div>
       )}
