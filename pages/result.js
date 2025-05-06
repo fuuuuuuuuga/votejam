@@ -224,7 +224,7 @@ export default function ResultPage() {
       ) : (
         <>
           {errorMessage && (
-            <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-2 rounded-lg shadow-lg z-50 animate-fade-in whitespace-nowrap text-sm">
+            <div className="fixed bottom-4 md:bottom-4 sm:top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-2 rounded-lg shadow-lg z-50 animate-fade-in whitespace-nowrap text-sm">
               {errorMessage}
             </div>
           )}
